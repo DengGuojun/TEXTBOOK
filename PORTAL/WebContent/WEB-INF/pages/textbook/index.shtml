@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全国新型职业农民培育教材信息平台</title>
+	<!--[if lt IE9]> 
+	<script> 
+	   (function() {
+	     if (! 
+	     /*@cc_on!@*/
+	     0) return;
+	     var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+	     var i= e.length;
+	     while (i--){
+	         document.createElement(e[i])
+	     } 
+	})() 
+	</script>
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+</head>
+<body>
+	<nav class="g-nav clearfix">
+		<div class="nav-content">
+			<div class="slide-left">
+				<h1 class="nav-title"><a href="/index.shtml">全国新型职业农民培育教材信息平台</a></h1>
+			</div>
+			<div class="slide-right">
+				<div class="fr collect-box">
+					<a class="item" onclick="AddFavorite();">收藏</a>
+					<i class="u-line"></i>
+					<a class="item" href="http://1.202.195.201:9090/wasdemo/search?searchword=&channelid=84836&searchword=&SendHead=%E6%90%9C%E7%B4%A2">帮助</a>
+				</div>
+				<div class="search-box fr">
+					<input type="text" class="search-input" name="fullTextSearch" id="fullTextSearch" placeholder="搜索教材名称…">
+					<i class="icon-lib icon-search" onclick="search();"></i>
+				</div>
+			</div>
+		</div>
+		
+	</nav>
+	<div class="g-container">
+		<div class="rel">
+			<div class="slide-section left auto wide-screen small">
+				<div class="book-info">
+						<div class="content">
+							<h2>
+								<i class="icon-lib icon-book-info"></i>
+								<span>简介</span>
+							</h2>
+							<div class="book-cont">
+								为贯彻落实《农业部办公厅关于加强新型职业农民培育教材建设的通知》（农办科〔2015〕41号）要求，农业部农民科技教育培训中心按照教材建设情况，定期组织开展新型职业农民培育教材评价遴选工作。2016年，按照《关于开展农业部新型职业农民培育规划教材申报工作的通知》（农播培〔2015〕96号）安排，农业部农民科技教育培训中心组织专家组，对19个申报单位申报的260种教材开展了评价遴选工作，遴选出131本推荐教材。经农业部科技教育司同意，印发了《关于发布〈全国新型职业农民培育推荐教材目录（2016年）〉的通知》（农培办〔2016〕2号），建设了全国新型职业农民培育教材信息平台，发布推荐教材目录及相关信息，供各地在开展新型职业农民教育培训工作时选用，促进教学资源共享。
+							</div>
+						</div>
+				</div>
+				<div class="book-type border-line">
+					<div class="content">
+						<h2><i class="icon-lib icon-type"></i><span>图书分类</span></h2>
+						<div class="clearfix negative">
+							<div class="row-small">
+								<div class="type-item s-green"><a href="/keySearch/*/list-1-14.shtml?catalogId=2"><i class="icon-type-1 icon-lib"></i>通用教材</a></div>
+								<div class="type-item s-green"><a href="/keySearch/*/list-1-14.shtml?catalogId=3"><i class="icon-type-2 icon-lib"></i>专修教材</a></div>
+								<div class="type-item"><a href="/keySearch/*/list-1-14.shtml?catalogId=17">种植业</a></div>
+								<div class="type-item"><a href="/keySearch/*/list-1-14.shtml?catalogId=18">养殖业</a></div>
+								<div class="type-item"><a href="/keySearch/*/list-1-14.shtml?catalogId=19">其他生产经营</a></div>
+								<div class="type-item s-green"><a href="/keySearch/*/list-1-14.shtml?catalogId=4"><i class="icon-type-3 icon-lib"></i>少数民族语言教材</a></div>
+								<div class="type-item"><a href="/keySearch/*/list-1-14.shtml?catalogId=20">维语教材</a></div>
+								<div class="type-item"><a href="/keySearch/*/list-1-14.shtml?catalogId=21">藏语教材</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="book-catalog border-line">
+					<div class="content">
+						<h2>
+							<i class="icon-lib icon-book-calatog"></i>
+							<span>图书目录</span>
+						</h2>
+						<div class="catalog-content">
+							<div class="btn w100 btn3" style="margin-bottom: 16px;"><a href="http://www.ngonline.cn/njsw/zxxz/201008/P020160301510909765836.xls">图书目录表</a></div>
+							<div class="btn w100 btn4"><a href="http://www.ngonline.cn/njsw/zxxz/201008/P020151214724455762249.xls" target="_blank">图书订单</a></div>
+							<div class="search-link">
+								<a href="/textbook/FeedbackSubmit.do">找不到想要的书？</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="book-solicit border-line">
+					<div class="content">
+						<h2>
+							<i class="icon-lib icon-book-solicit"></i>
+							<span>图书征订</span>
+						</h2>
+						<div class="book-cont">
+							<div class="solicit-content">
+								<div class="btn w100 btn4"><a href="http://www.ngx.net.cn/gztz/201603/P020160309300127088008.docx">全国新型职业农民培育推荐教材目录</a></div>
+								<div class="links-c">
+									<a href="/textbook/ArticleDetails.do?ArticleId=19">【农培办【2016】2号文】</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="qrcode-box border-line">
+					<div class="content">
+						<h2>
+							<i class="icon-lib icon-qrcode"></i>
+							<span>云上智农二维码</span>
+						</h2>
+						<div class="">
+							<img class="mg-auto" src="/images/qrcode.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="cont-section mt-16 mr-0 wide-screen" style="height:1497px;">
+				<div class="content">
+					<div class="row">
+						<!-- 轮播图 -->
+						<div class="swiper-container index-swiper">
+						  <div class="swiper-wrapper">
+								<#if RotationList??>
+								<#list RotationList as rotation>
+									<div class="swiper-slide">
+									<div class="media-item">
+										<#if rotation.originalUrl!=''>
+											<a href="${rotation.originalUrl}" target="_black"><img src="${RotationPath}${rotation.imageUrl}"/></a>
+										<#else>
+											<img src="${RotationPath}${rotation.imageUrl}"/>
+										</#if>
+										<div class="ft-txt">${rotation.imageTitle}</div>
+									</div>
+									</div>
+								</#list>
+								</#if>
+						  </div>
+						  <div class="pagination"></div>
+						</div>
+						
+						<!-- 动态资讯 -->
+						<article class="article-box">
+							<section class="article-list clearfix">
+								<div class="fl w50">
+									<h3 class="article-hd">动态资讯</h3>
+									<ul class="borright">
+										<#if PolicyHighlightsList??>
+										<#assign i = 0>
+										<#list PolicyHighlightsList as article>
+											<#if i == 0>
+												<li class="top-tag"><a href="/textbook/ArticleDetails.do?ArticleId=${article.articleId}" target="_blank">${article.articleTitle}</a><i class="top-tag">new</i></li>
+											<#else>
+												<li><a href="/textbook/ArticleDetails.do?ArticleId=${article.articleId}" target="_blank"><span>${article.articleTitle}</span></a></li>
+											</#if>
+											<#assign i = i + 1>
+										</#list>
+										</#if>
+									</ul>
+								</div>
+								<div class="fl w50">
+									<h3 class="article-hd">通知公告</h3>
+									<ul>
+										<#if AnnouncementList??>
+										<#assign i = 0>
+										<#list AnnouncementList as article>
+											<#if i == 0>
+												<li class="top-tag"><a href="/textbook/ArticleDetails.do?ArticleId=${article.articleId}" target="_blank">${article.articleTitle}</a><i class="top-tag">new</i></li>
+											<#else>
+												<li><span><a href="/textbook/ArticleDetails.do?ArticleId=${article.articleId}" target="_blank">${article.articleTitle}</a></span></li>
+											</#if>
+											<#assign i = i + 1>
+										</#list>
+										</#if>
+									</ul>
+								</div>
+							</section>
+						</article>
+					</div>
+				</div>
+				<div class="content border-line section-extra">
+					<!-- 热门书籍 -->
+					<div class="negative clearfix">
+						<h2><span>新书推荐</span></h2>
+						<#if TopNewBookList??>
+							<#list TopNewBookList as textbook>
+								<div class="cont-item">
+									<a href="/t/${textbook.id}.shtml">
+										<#assign cover0=textbook.cover0>
+										<#if cover0 != "">
+										<img src="${CoverPath}${textbook.cover0}">
+										<#else>
+										<img src="/images/default-img.png">
+										</#if>
+										<span class="cont-tit">${textbook.textbookName}</span>
+										<span class="cont-price">${textbook.price}元/本</span>
+									</a>
+								</div>
+							</#list>
+						</#if>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="g-footer">
+		<p>copyright©2000-2015 www.ngx.net.cn  All Rights Reserved 版权所有 农业部农民科技教育培训中心 中央农业广播电视学校</p>
+		<p>京ICP备05072014号  地址：北京市朝阳区麦子店街24号楼  邮编：100125  电话：010-59196034  电子邮箱：zgxxzynmw2014@126.com</p>
+	</footer>			
+</body>
+<!-- sina jquery -->
+<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.8.3/jquery.min.js"></script>
+<!-- swiper -->
+<script type="text/javascript" src="/js/swiper.js"></script>
+<!-- common -->
+<script type="text/javascript" src="/js/app.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var indexSwiper = $('.index-swiper').swiper({
+			autoplay: 5000,
+			speed: 600,
+			loop: true,
+			pagination : '.pagination',
+			paginationClickable :true
+		})
+		$('.index-swiper .swiper-pagination-switch').each(function(){
+			var _index = $(this).index();
+			$(this).text(1+_index);
+		})
+	})
+</script>
+</html>

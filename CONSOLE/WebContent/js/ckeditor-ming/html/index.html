@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CKeditor - 二次开发</title>
+	<style type="text/css">
+		.editor{ width: 800px; height: 200px; }
+		.cke_reset_all .clearfix:after{ content: ''; height: 0; clear: both; display: block; }
+		.cke_reset_all .scrollBox{ width: 615px; height: 400px; overflow-y: auto;  }
+		.cke_reset_all .fl{ float: left; }
+		.cke_reset_all .imgBox{ width: 180px; height: 180px; margin: 10px; overflow: hidden; position: relative; }
+		.cke_reset_all .imgBox .checked{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(../images/check.png) no-repeat #000; opacity: .4; filter: alpha(opacity = 40); color: #fff; line-height: 180px; font-size: 40px; text-align: center; background-position: 50% 50%; }
+		.cke_reset_all .imgBox .checked.dn{ display: none; }
+		.cke_reset_all .imgBox .imgSrc{ width: 100%; height: 100%; }
+		.cke_reset_all .search-int{ margin-left: 10px; border: 1px solid #ccc; padding: 3px; outline: none }
+		.cke_reset_all .search-btn{ border: 1px solid #ccc; padding: 3px; background: #f2f2f2; border-left-width: 0; }
+	</style>
+</head>
+<body>
+	<div class="editor" id="editor"></div>
+</body>
+<script type="text/javascript" src="../ckeditor.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>
+<script type="text/javascript">
+	var editor = document.getElementById('editor');
+	CKEDITOR.appendTo( 'editor' );
+</script>
+</html>

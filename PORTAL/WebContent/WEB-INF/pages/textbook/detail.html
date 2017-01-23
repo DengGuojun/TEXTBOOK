@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>全国新型职业农民培育教材信息平台</title>
+<!--[if lt IE9]> 
+	<script> 
+	   (function() {
+	     if (! 
+	     /*@cc_on!@*/
+	     0) return;
+	     var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+	     var i= e.length;
+	     while (i--){
+	         document.createElement(e[i])
+	     } 
+	})() 
+	</script>
+	<![endif]-->
+	<script type='text/javascript'src="/js/My97DatePicker/WdatePicker.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+	<link href="/js/My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<nav class="g-nav clearfix">
+		<div class="nav-content">
+			<div class="slide-left">
+				<h1 class="nav-title">
+					<a href="/index.shtml">全国新型职业农民培育教材信息平台</a>
+				</h1>
+			</div>
+			<div class="slide-right">
+				<div class="fr collect-box">
+					<a class="item" href="" rel="sidebar" onclick="AddFavorite();">收藏</a>
+					<i class="u-line"></i> <a class="item"
+						href="http://1.202.195.201:9090/wasdemo/search?searchword=&channelid=84836&searchword=&SendHead=%E6%90%9C%E7%B4%A2">帮助</a>
+				</div>
+				<div class="search-box fr">
+					<input type="text" class="search-input" name="fullTextSearch"
+						id="fullTextSearch" placeholder="搜索教材名称…"> <i class="icon-lib icon-search"
+						onclick="search();"></i>
+				</div>
+			</div>
+		</div>
+
+	</nav>
+	
+	<div class="g-container">
+	<#if TextbookInfo??>
+		<div class="cont-section mt-16 ml-0 mr-0 small">
+			<div class="pd-24">
+				<div class="book-detail">
+					<#assign cover0=TextbookInfo.cover0>
+					<#if cover0 != "">
+						<img class="detail-img JS-imgDetail" src="${CoverPath}${TextbookInfo.cover0}" />
+					<#else>
+						<img class="detail-img JS-imgDetail" src="/images/default-img.png" />
+					</#if>
+					<div class="cont-detail">
+						<span class="cont-tit">${TextbookInfo.textbookName}</span>
+						<span class="cont-price">￥${TextbookInfo.price}</span>
+						<span class="cont-type">分类：<em>${CatalogName}</em></span>
+						<span class="cont-publish">出版社：<em>${Press}</em></span>
+						<span class="cont-date">出版日期：<em>${TextbookInfo.publicationDate}</em></span>
+						<span class="cont-publish">组编单位：<em>${TextbookInfo.groupEdit}</em></span>
+						<span class="cont-author">主编：<em>${TextbookInfo.mainEdit}</em></span>
+						<span class="cont-author-2">指导老师：<em>${TextbookInfo.guideTeacher}</em></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cont-section mt-16 ml-0 mr-0 small">
+			<div class="JS-tab tab-nav">
+				<div class="tab-item selected"><a>编写说明</a></div>
+				<div class="tab-item"><a>目录</a></div>
+				<div class="tab-item"><a>订购方法</a></div>
+				<div class="tab-item"><a>内容简介</a></div>
+			</div>
+			<div class="tab-content article-b">
+				<div class="content-item">
+					<p>
+						${TextbookInfo.writeDescription}
+					</p>
+				</div>
+				<div class="content-item dn">
+					<p>
+						${TextbookInfo.contents}
+					</p>
+				</div>
+				<div class="content-item dn">
+					<p>
+						
+						${TextbookInfo.firstChapter}
+					</p>
+				</div>
+				<div class="content-item dn">
+					<p>
+						${TextbookInfo.introduction!}
+					</p>
+				</div>
+			</div>
+		</div>
+	<#else>
+		<div class="rel">
+			<div class="cont-section ml-0 mt-16">
+				<div class="result-none">
+					<div class="none-tips">
+						<i class="icon-result-search"></i>
+						图书或已下架
+					</div>
+				</div>
+			</div>
+		</div>
+	</#if>
+	</div>
+	<footer class="g-footer">
+		<p>copyright©2000-2015 www.ngx.net.cn  All Rights Reserved 版权所有 农业部农民科技教育培训中心 中央农业广播电视学校</p>
+		<p>京ICP备05072014号  地址：北京市朝阳区麦子店街24号楼  邮编：100125  电话：010-59196034  电子邮箱：zgxxzynmw2014@126.com</p>
+	</footer>
+</body>
+<script type="text/javascript">
+	function querySolrData(){
+		$("#textbookName1").val($("#textbookName1").val()==""?"*":$("#textbookName1").val());
+		$("#formSearch").attr("action","/keySearch/" + $("#textbookName1").val() + "/list-1-14.shtml");
+		formSearch.submit();
+	}
+	
+	//select
+	window.onload=function(){
+		$('.search-select select').change(function(){
+			var selectItem = $(this).children('option:selected').text();
+			$(this).parents('.search-select').find('span').text(selectItem);
+		});
+    }
+</script>
+<!-- common -->
+<script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/js/app.js"></script>
+</html>

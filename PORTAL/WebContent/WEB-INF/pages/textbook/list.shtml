@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全国新型职业农民培育教材信息平台</title>
+	<!--[if lt IE9]> 
+	<script> 
+	   (function() {
+	     if (! 
+	     /*@cc_on!@*/
+	     0) return;
+	     var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+	     var i= e.length;
+	     while (i--){
+	         document.createElement(e[i])
+	     } 
+	})() 
+	</script>
+	<![endif]-->
+	<script type='text/javascript'src="/js/My97DatePicker/WdatePicker.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+	<link href="/js/My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<nav class="g-nav clearfix">
+		<div class="nav-content">
+			<div class="slide-left">
+				<h1 class="nav-title"><a href="/index.shtml">全国新型职业农民培育教材信息平台</a></h1>
+			</div>
+			<div class="slide-right">
+				<div class="fr collect-box">
+					<a class="item" rel="sidebar" onclick="AddFavorite();">收藏</a>
+					<i class="u-line"></i>
+					<a class="item" href="http://1.202.195.201:9090/wasdemo/search?searchword=&channelid=84836&searchword=&SendHead=%E6%90%9C%E7%B4%A2">帮助</a>
+				</div>
+				<div class="search-box fr">
+					<input type="text" class="search-input" name="fullTextSearch" id="fullTextSearch" value="${text}" placeholder="搜索教材名称…">
+					<i class="icon-lib icon-search" onclick="search();"></i>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="g-container">
+		<div class="rel">
+			<div class="slide-section left auto wide-screen">
+				<div class="book-info">
+						<div class="content">
+							<h2>
+								<i class="icon-lib icon-book-info"></i>
+								<span>简介</span>
+							</h2>
+							<div class="book-cont">
+								为贯彻落实《农业部办公厅关于加强新型职业农民培育教材建设的通知》（农办科〔2015〕41号）要求，农业部农民科技教育培训中心按照教材建设情况，定期组织开展新型职业农民培育教材评价遴选工作。2016年，按照《关于开展农业部新型职业农民培育规划教材申报工作的通知》（农播培〔2015〕96号）安排，农业部农民科技教育培训中心组织专家组，对19个申报单位申报的260种教材开展了评价遴选工作，遴选出131本推荐教材。经农业部科技教育司同意，印发了《关于发布〈全国新型职业农民培育推荐教材目录（2016年）〉的通知》（农培办〔2016〕2号），建设了全国新型职业农民培育教材信息平台，发布推荐教材目录及相关信息，供各地在开展新型职业农民教育培训工作时选用，促进教学资源共享。
+							</div>
+						</div>
+				</div>
+				<div class="book-type border-line">
+					<div class="content">
+						<h2><i class="icon-lib icon-type"></i><span>图书分类</span></h2>
+						<div class="clearfix negative">
+							<div class="row-small">
+								<div class="type-item s-green"><a href="/keySearch/*/list-1-14.shtml?catalogId=2"><i class="icon-type-1 icon-lib"></i>通用教材</a></div>
+								<div class="type-item s-green"><a href="/keySearch/*/list-1-14.shtml?catalogId=3"><i class="icon-type-2 icon-lib"></i>专修教材</a></div>
+								<div class="type-item"><a href="/keySearch/*/list-1-14.shtml?catalogId=17">种植业</a></div>
+								<div class="type-item"><a href="/keySearch/*/list-1-14.shtml?catalogId=18">养殖业</a></div>
+								<div class="type-item"><a href="/keySearch/*/list-1-14.shtml?catalogId=19">其他生产经营</a></div>
+								<div class="type-item s-green"><a href="/keySearch/*/list-1-14.shtml?catalogId=4"><i class="icon-type-3 icon-lib"></i>少数民族语言教材</a></div>
+								<div class="type-item"><a href="/keySearch/*/list-1-14.shtml?catalogId=20">维语教材</a></div>
+								<div class="type-item"><a href="/keySearch/*/list-1-14.shtml?catalogId=21">藏语教材</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="book-catalog border-line">
+					<div class="content">
+						<h2>
+							<i class="icon-lib icon-book-calatog"></i>
+							<span>图书目录</span>
+						</h2>
+						<div class="catalog-content">
+							<div class="btn w100 btn3" style="margin-bottom: 16px;"><a href="http://www.ngonline.cn/njsw/zxxz/201008/P020160301510909765836.xls">图书目录表</a></div>
+							<div class="btn w100 btn4"><a href="http://www.ngonline.cn/njsw/zxxz/201008/P020151214724455762249.xls">图书订单</a></div>
+							<div class="search-link">
+								<a href="/textbook/FeedbackSubmit.do">找不到想要的书？</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="book-solicit border-line">
+					<div class="content">
+						<h2>
+							<i class="icon-lib icon-book-solicit"></i>
+							<span>图书征订</span>
+						</h2>
+						<div class="book-cont">
+							<div class="solicit-content">
+								<div class="btn w100 btn4"><a href="http://www.ngx.net.cn/gztz/201603/P020160309300127088008.docx">全国新型职业农民培育推荐教材目录</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="qrcode-box border-line">
+					<div class="content">
+						<h2>
+							<i class="icon-lib icon-qrcode"></i>
+							<span>云上智农二维码</span>
+						</h2>
+						<div class="">
+							<img class="mg-auto" src="/images/qrcode.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="cont-section mt-16 mr-0 wide-screen" style="height: 1497px">
+				<form id="formSearch" action="/search/*/list-1-14.shtml" method="get">
+					<div class="search-wrp horizontal">
+						<div class="search-item w33">
+							<div class="wrap">
+								<em>分类</em>
+								<div class="search-select">
+									<span></span>
+							        <select class="search-select" name="directory1" id="directory1">
+							        	<option value="">请选择</option>
+										<#list DirectoryList1 as bean>
+											<option value="${bean.catalogId}" ${(DirectoryList1Id==bean.catalogId)?string('selected','')}>${bean.catalogName}</option>
+										</#list>
+									</select>
+								</div>
+							</div>
+						</div>
+						<input type="hidden" name="catalogId" id="catalogId">
+						<div class="search-item w33">
+							<div class="wrap">
+								<div class="search-select">
+									<span></span>
+							       	<select class="search-select" name="directory2" id="directory2">
+										<option value="">请选择</option>
+										<#list DirectoryList2 as bean>
+											<option value="${bean.catalogId}" ${(DirectoryList2Id==bean.catalogId)?string('selected','')}>${bean.catalogName}</option>
+										</#list>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="search-item w33">
+							<div class="wrap">
+								<em>图书名称</em>
+								<div class="search-input">
+									<input type="text" name="textbookName1" id="textbookName1" size="20" value="${(textbookName=='*')?string('',textbookName)}"/>
+								</div>
+							</div>
+						</div>
+						<div class="search-item w33">
+							<div class="wrap">
+								<em>年份</em>
+								<div class="search-input">
+									<input type="text" name="year" id="year" size="20" value="${(year=='*')?string('',year)}" onclick="WdatePicker({dateFmt:'yyyy',minDate:'2010',maxDate:'2030'})"/>
+								</div>
+							</div>
+						</div>
+						<div class="search-item w33">
+							<div class="wrap">
+								<em>出版社</em>
+								<div class="search-select">
+									<span></span>
+						      		<select id="press" name="press" > 
+										<option value="">请选择</option>
+										<#list pressList as bean>
+										<option value="${bean.pressId}" ${(press==(bean.pressId?c))?string('selected','')}>${bean.pressName}</option>
+										</#list>
+							  		</select>
+								</div>
+							</div>
+						</div>
+						<div class="search-item w33">
+								<div class="wrap">
+									<em>省份</em>
+									<div class="search-select">
+										<span></span>
+										<select class="form-control" name="province" id="province"  style="width:120px">
+									      	<option value="">请选择</option>
+									      	<option value="0" ${(province=='0')?string('selected','')}>中央农广校</option>
+									      	<#list provinceList as bean>
+											<option value="${bean.provinceId}" ${(province==(bean.provinceId?c))?string('selected','')}>${bean.provinceName}</option>
+											</#list>
+								      	</select>
+									</div>
+								</div>
+							</div>	  	
+					  	<div class="search-item w33">
+							<div class="btn search-btn-success" onclick="querySolrData()"><a>查询</a></div>
+						</div>
+					</div>
+					
+					<div class="type-list clearfix border-line">
+						<#if TextbookList??>
+							<#list TextbookList as textbook>
+								<div class="cont-item">
+									<a href="/t/${textbook.id}.shtml">
+										<#assign cover0=textbook.cover0>
+										<#if cover0 != "">
+										<img src="${CoverPath}${textbook.cover0}">
+										<#else>
+										<img src="/images/default-img.png">
+										</#if>
+										<div class="cont-detail">
+											<span class="cont-tit ellipsis">${textbook.textbookName}</span>
+											<span class="cont-price">￥${textbook.price}<em class="cont-publish">${textbook.press}</em></span>
+											<span class="cont-company ellipsis">组编单位：${textbook.groupEdit}</span>
+											<span class="cont-author ellipsis">主编：${textbook.mainEdit}</span>
+											<span class="cont-year">年份：${textbook.year}</span>
+										</div>
+									</a>
+								</div>
+							</#list>
+						</#if>
+					</div>
+					<div class="page-count tr pt-70">
+						<div class="">共<span class="num">${Page.totalPageNumber}</span>个列表</div>
+						<div class="ml-16">
+							<i class="icon-lib icon-prev" onclick="goPage(${Page.prePageNumber});"> </i>
+							<span>${Page.currentPageNumber}/${Page.totalPageNumber}</span>
+							<i class="icon-lib icon-next" onclick="goPage(${Page.nextPageNumber});"> </i>
+						</div>
+						<div class="ml-16">
+							<input type="text" class="page-int" id="switchPage"/>
+						</div>
+						<button class="btn btn-turn ml-16" onclick="goInputPage(${Page.totalPageNumber});">跳转</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer class="g-footer">
+		<p>copyright©2000-2015 www.ngx.net.cn  All Rights Reserved 版权所有 农业部农民科技教育培训中心 中央农业广播电视学校</p>
+		<p>京ICP备05072014号  地址：北京市朝阳区麦子店街24号楼  邮编：100125  电话：010-59196034  电子邮箱：zgxxzynmw2014@126.com</p>
+	</footer>
+</body>
+<script type="text/javascript">
+	function querySolrData(){
+		$("#textbookName1").val($("#textbookName1").val()==""?"*":$("#textbookName1").val());
+		$("#formSearch").attr('action',"/keySearch/" + $("#textbookName1").val() + "/list-1-14.shtml");
+		if($("#directory2").val()== ''){
+			$("#catalogId").val($("#directory1").val());
+		}else{
+			$("#catalogId").val($("#directory2").val());
+		}
+		formSearch.submit();
+	}
+	
+	//select
+	window.onload=function(){
+		$('.search-select select').change(function(){
+			var selectItem = $(this).children('option:selected').text();
+			$(this).parents('.search-select').find('span').text(selectItem);
+		});
+		$('.search-select select').each(function(){
+			var selectItem = $(this).children('option:selected').text();
+			$(this).parents('.search-select').find('span').text(selectItem);
+		});
+
+		$("#directory1").on("change",function() {
+			$("#directory2").html();
+			seletCate_top( $("#directory1").val() , $("#directory2") );
+		})
+    }
+</script>
+
+<script>
+	function seletCate_top(catalogId, element) {
+		if (catalogId == 0)
+			return;
+		$.ajax({
+			type : 'get',
+			url : "/catalog/CatalogInfoSelect.do?catalogId=" + catalogId,
+			dataType : 'json',
+			success : function(data) {
+				console.log(data);
+				var catalogInfo = data.result;
+				child = "<option></option>";
+				for (var j = 0; j < catalogInfo.length; j++) {
+					child += "<option value='" + catalogInfo[j].catalogId  +"'>" + catalogInfo[j].catalogName + "</option>";
+				}
+				element.html(child);
+			}
+		});
+	}
+</script>
+<!-- common -->
+<script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/js/app.js"></script>
+<script type='text/javascript'src="/js/My97DatePicker/WdatePicker.js"></script>
+<link href="/js/My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css">
+</html>		

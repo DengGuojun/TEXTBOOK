@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solrs>
+	<solr>
+		<solr_name>textbook</solr_name>
+		<solr_client_mode>http</solr_client_mode>
+		<server_urls>
+			<!--  <server_url>http://172.16.3.13:8983/solr/</server_url>-->
+			<server_url>http://172.16.3.13:8983/solr/</server_url>
+		</server_urls>
+		<connection_timeout>5000</connection_timeout>
+		<socket_timeout>1000</socket_timeout>
+		<default_max_connections_per_host>100</default_max_connections_per_host>
+		<max_total_connections>100</max_total_connections>
+		<follow_redirects>false</follow_redirects>
+		<allow_compression>true</allow_compression>
+		<commit_within>10000</commit_within>
+	</solr>
+</solrs>
